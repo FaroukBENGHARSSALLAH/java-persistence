@@ -17,12 +17,12 @@ public class DBAdministrator {
 	               */
 	
 	
-	                // MySQL data base URL  --  jdbc:mysql://[host1][:port1][,/[database]] »
-	       private final static String dbURL = "jdbc:mysql://localhost:3306/PERSISTANCE-MYSQL";
+	                // MySQL data base URL  --  jdbc:mysql://[host1][:port1][,/[database]]
+	       private final static String dbURL = "jdbc:mysql://[host1][:port1][,/[database]]";
 	                      // MySQL data base username
-	       private final static String dbUser = "root";
+	       private final static String dbUser = "";
 	                     // MySQL data base password
-	       private final static String dbPassword = "root";
+	       private final static String dbPassword = "";
 	                     // MySQL data base driver used as a JAVA API to connect the data base
 	       private final static String dbDriver = "com.mysql.jdbc.Driver";
 	       
