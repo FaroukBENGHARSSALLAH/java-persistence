@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd" >
+                               
+                               <!--–  in hibernate configuration file, we set connection pool properties and log properties –-->
+                                         
+		<hibernate-configuration>
+		
+					 <session-factory   >
+								  <!--–  database driver –-->
+								  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+								  
+								  <!--–  database URL  –-->
+								  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/PERSISTANCE-MYSQL</property>
+								  
+								  <!--–  database dialect –-->
+								  <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+								  
+								  <!--–  database username –-->
+								  <property name="hibernate.connection.username">root</property>
+								  
+								  <!--–  database password –-->
+								  <property name="hibernate.connection.password">root</property>
+								  
+								  <!--– disable autocommit –-->
+								  <property name="hibernate.connection.autocommit">False</property>
+								  
+								  <!--– to display generated sql query   –-->
+								  <property name="show_sql">true</property>
+								  
+								  <!--– to display generated sql query   –-->
+								  <property name="format_sql">true</property>
+								  
+								  <!--– to display generated sql query in commented format   –-->
+								  <property name="use_sql_comments">true</property>
+								  
+								  <!--–  entiry mapping file –-->
+								  <mapping resource="mapping/employee.hbm.xml"/>
+					 </session-factory>
+					 
+		</hibernate-configuration>

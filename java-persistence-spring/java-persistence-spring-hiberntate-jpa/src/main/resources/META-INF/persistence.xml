@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" 
+             xmlns="http://java.sun.com/xml/ns/persistence" 
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence 
+                                 http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd "  >
+                    
+                    <!--–  in JPA persistence file, we set only hibernate dialect and log properties –-->
+                    
+                                 
+                         <!--–  persistence unit name  –-->
+	  <persistence-unit  name="EMPLOYEE_PERSISTANCE_UNIT"  transaction-type="RESOURCE_LOCAL" > 
+	                     
+  	                 <provider>org.hibernate.ejb.HibernatePersistence</provider> 
+  	                 
+	                 <properties>
+	                                         
+									         <!--–  database dialect –-->
+ 									  <property name="hibernate.dialect"  value="org.hibernate.dialect.MySQLDialect"   />
+									  
+									          <!--– update database tables, not erase them and recreate them –-->
+	                                 <property   name="hibernate.hbm2ddl.auto" value="update"  /> 
+									  									  
+									         <!--– to display generated sql query   –-->
+									  <property name="show_sql"  value="true"   />
+									  
+									        <!--– to display generated sql query   –-->
+									  <property name="format_sql"   value="true"   />
+									  
+									        <!--– to display generated sql query in commented format   –-->
+									  <property name="use_sql_comments"   value="true"   />
+	                 </properties>
+	                 
+	    </persistence-unit>
+  
+</persistence>

@@ -1,0 +1,71 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         
+	  <modelVersion>4.0.0</modelVersion>
+	  <parent>
+			 <groupId>com.farouk.bengharssallah.java.persistence.hibernate</groupId>
+	         <artifactId>java-persistence-hibernate</artifactId>
+			 <version>${project-global-version}</version>
+      </parent>
+      <groupId>com.farouk.bengharssallah.java.persistence.hibernate.core</groupId>
+	  <artifactId>java-persistence-hibernate-core</artifactId>
+      <packaging>jar</packaging>
+  
+  
+	  <name>Java persistence Hibernate Core APIs</name>
+	  <description>Modules libraries containing JAVA persistence Hibernate Core APIs to get data from data bases</description>
+	  
+	  <developers>
+		<developer>
+		  <name>Farouk BEN GHARSSALLAH</name>
+		  <email>farouk.bengarssallah@gmail.com</email>
+		</developer>
+	  </developers>
+	  
+	  <dependencies>
+	       <dependency>
+			    <groupId>org.hibernate</groupId>
+			    <artifactId>hibernate-core</artifactId>
+			    <version>3.5.0-Final</version>
+           </dependency>
+             <dependency>
+		        <groupId>org.slf4j</groupId>
+		        <artifactId>slf4j-log4j12</artifactId>
+		        <version>${slf4j-version}</version>
+            </dependency>
+            <dependency>
+			    <groupId>javassist</groupId>
+			    <artifactId>javassist</artifactId>
+			    <version>${javassist-version}</version>
+           </dependency> 
+           <dependency>
+			    <groupId>commons-collections</groupId>
+			    <artifactId>commons-collections</artifactId>
+			    <version>3.2.1</version>
+           </dependency>
+	       <dependency>
+			    <groupId>mysql</groupId>
+			    <artifactId>mysql-connector-java</artifactId>
+			    <version>${mysql-connector-java-version}</version>
+			    <type>jar</type>
+			    <scope>compile</scope>
+          </dependency>
+    
+	  </dependencies>
+	  
+	    <build>
+		  <plugins>
+			   <plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>${maven-compiler-plugin-version}</version>
+					<configuration>
+						 <source>${java-jdk-version}</source>
+	                     <target>${java-jdk-version}</target>
+					</configuration>
+				</plugin>
+		  </plugins>
+      </build>
+	
+</project>

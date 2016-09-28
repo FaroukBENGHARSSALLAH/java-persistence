@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+                                    
+                                    
+                  <!--–  in hibernate mapping file, we set entities to be mapped to relational format –-->
+       <hibernate-mapping>
+                      <!-- reference an entity class -->
+              <class name="com.farouk.bengharssallah.java.persistence.hibernate.core.entity.Employee" table="EMPLOYEE"   >
+              
+                               <!-- reference an entity id property -->
+					    
+					    <id name="id" column="ID" type="integer"  >
+					              <generator class="assigned"></generator>
+					    </id>
+					            <!-- reference an entity name property -->
+                       <property name="name" column="NAME" type="string"></property>
+             </class>
+             
+      </hibernate-mapping>

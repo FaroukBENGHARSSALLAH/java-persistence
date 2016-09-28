@@ -1,0 +1,26 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
+
+
+   <!--–  in JPA persistence file, we set Hibernate log properties –-->
+   
+  <persistence-unit name="persistenceUnit" transaction-type="RESOURCE_LOCAL">
+             <provider>org.hibernate.ejb.HibernatePersistence</provider>
+             <properties>
+				                            <!--–  database dialect –-->
+									  <property name="hibernate.dialect"  value="org.hibernate.dialect.MySQLDialect"   />
+									  
+									    <!--– update database tables, not erase them and recreate them –-->
+	                                 <property   name="hibernate.hbm2ddl.auto" value="update"  /> 
+									  									  
+									         <!--– to display generated sql query   –-->
+									  <property name="show_sql"  value="true"   />
+									  
+									        <!--– to display generated sql query   –-->
+									  <property name="format_sql"   value="true"   />
+									  
+									        <!--– to display generated sql query in commented format   –-->
+									  <property name="use_sql_comments"   value="true"   />
+		      </properties>
+  </persistence-unit>
+
+</persistence>
