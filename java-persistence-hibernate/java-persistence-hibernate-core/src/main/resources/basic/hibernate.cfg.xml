@@ -11,16 +11,16 @@
 								  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
 								  
 								  <!--–  database URL  –-->
-								  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/PERSISTANCE-MYSQL</property>
+								  <property name="hibernate.connection.url">jdbc:mysql://[host1][:port1][,/[database]]</property>
 								  
 								  <!--–  database dialect –-->
 								  <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 								  
 								  <!--–  database username –-->
-								  <property name="hibernate.connection.username">root</property>
+								  <property name="hibernate.connection.username"> </property>
 								  
 								  <!--–  database password –-->
-								  <property name="hibernate.connection.password">root</property>
+								  <property name="hibernate.connection.password"> </property>
 								  
 								  <!--– disable autocommit –-->
 								  <property name="hibernate.connection.autocommit">False</property>
