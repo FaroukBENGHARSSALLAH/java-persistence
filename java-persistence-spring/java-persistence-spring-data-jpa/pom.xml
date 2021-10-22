@@ -1,0 +1,66 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         
+	  <modelVersion>4.0.0</modelVersion>
+	  <parent>
+			<groupId>com.farouk.bengharssallah.java.persistence.spring</groupId>
+	        <artifactId>java-persistence-spring</artifactId>
+			<version>${project-global-version}</version>
+      </parent>
+      <groupId>com.farouk.bengharssallah.java.persistence.spring.data</groupId>
+	  <artifactId>java-persistence-spring-data-jpa</artifactId>
+      <packaging>jar</packaging>
+  
+  
+	  <name>Java persistence Spring Data JPA APIs</name>
+	  <description>Modules libraries containing JAVA persistence Spring data JPA APIs to get data from relational databases</description>
+	  
+	  <developers>
+		<developer>
+		  <name>Farouk BEN GHARSSALLAH</name>
+		  <email>farouk.bengarssallah@gmail.com</email>
+		</developer>
+	  </developers>
+	
+	  <dependencies>
+				                   <!--  mysql driver  -->
+				       <dependency>
+						    <groupId>mysql</groupId>
+						    <artifactId>mysql-connector-java</artifactId>
+						    <version>${mysql-connector-java-version}</version>
+						    <type>jar</type>
+						    <scope>compile</scope>
+			          </dependency>
+			          
+			                       <!-- Spring Data JPA -->
+					   <dependency>
+							<groupId>org.springframework.data</groupId>
+							<artifactId>spring-data-jpa</artifactId>
+							<version>1.2.0.RELEASE</version>
+					   </dependency>
+					   
+					            <!-- Hibernate Entity Manager -->
+					   
+					  <dependency>
+						    <groupId>org.hibernate</groupId>
+						    <artifactId>hibernate-entitymanager</artifactId>
+						    <version>${hibernate-entity-manager-version}</version>
+			           </dependency>
+	  </dependencies>
+	  
+	    <build>
+		  <plugins>
+			   <plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>${maven-compiler-plugin-version}</version>
+					<configuration>
+						 <source>${java-jdk-version}</source>
+	                     <target>${java-jdk-version}</target>
+					</configuration>
+				</plugin>
+		  </plugins>
+      </build>
+	
+</project>
